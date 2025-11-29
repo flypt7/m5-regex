@@ -37,7 +37,7 @@ public class Main {
         if (str == null) {
             return false;
         }
-        final boolean propertyOne = Pattern.matches(".*[0-9].*", str)
+        final boolean propertyOne = Pattern.matches(".*\\d.*", str)
                 && Pattern.matches(".*[a-z].*", str)
                 && Pattern.matches(".*[A-Z].*", str)
                 && Pattern.matches(".{" + minLength + ",}", str);
